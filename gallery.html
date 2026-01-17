@@ -2,40 +2,60 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>VISUAL_ARCHIVE // TROSTFRAUEN</title>
+    <title>VISUAL // TROSTFRAUEN</title>
     <style>
         html {
             background-color: #000;
             background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
-                              url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="150"><text x="0" y="30" fill="rgba(120,120,120,0.5)" font-family="monospace" font-size="12">DEATH IS NOT THE END TROSTFRAUEN VOID ECHOES</text><text x="20" y="80" fill="rgba(120,120,120,0.4)" font-family="monospace" font-size="12">STAY SILENT LISTEN TO THE STATIC RECALLING</text></svg>');
+                              url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="150"><text x="0" y="30" fill="rgba(120,120,120,0.5)" font-family="monospace" font-size="12">VISUAL_DATA_FRAGMENT IMG_LOAD_ERROR</text></svg>');
         }
-        body { color: #bbb; font-family: "Courier New", monospace; margin: 0; padding: 20px; }
-        .container { max-width: 900px; margin: 30px auto; border: 2px solid #444; background: #000; padding: 2px; }
-        .inner-border { border: 1px solid #222; padding: 20px; }
+        body { color: #bbb; font-family: "Courier New", monospace; padding: 20px; margin: 0; }
+        .container { max-width: 800px; margin: 0 auto; border: 2px solid #444; background: #000; padding: 4px; }
+        .inner-content { border: 1px solid #222; padding: 20px; }
 
-        /* Кнопка Windows */
         .win-button {
             display: inline-block; background: #c0c0c0; color: #000; padding: 5px 15px;
-            text-decoration: none; font-family: "Arial", sans-serif; font-size: 13px;
+            text-decoration: none; font-family: "Arial", sans-serif; font-size: 12px;
             border-top: 2px solid #fff; border-left: 2px solid #fff;
-            border-right: 2px solid #808080; border-bottom: 2px solid #808080;
+            border-right: 2px solid #444; border-bottom: 2px solid #444;
             margin-bottom: 20px;
         }
-        .win-button:active { border-top: 2px solid #808080; border-left: 2px solid #808080; border-right: 2px solid #fff; border-bottom: 2px solid #fff; }
+        .win-button:active { border-top: 2px solid #444; border-left: 2px solid #444; border-right: 2px solid #fff; border-bottom: 2px solid #fff; }
 
-        .folder-section { border: 1px inset #333; margin-bottom: 30px; padding: 15px; background: #0a0a0a; }
-        .folder-header { color: #eee; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid #444; padding-bottom: 5px; }
+        .folder { border: 1px solid #333; padding: 10px; margin-bottom: 20px; background: #050505; }
+        .folder-name { background: #222; color: #fff; padding: 5px; margin: -10px -10px 10px -10px; border-bottom: 1px solid #333; }
+        
+        .grid { display: flex; flex-wrap: wrap; gap: 10px; }
+        .photo { border: 1px solid #444; padding: 5px; width: 150px; text-align: center; }
+        
+        .photo img { width: 100%; height: auto; filter: grayscale(50%); border: 1px solid #222; }
+        .photo span { font-size: 10px; display: block; margin-top: 5px; color: #666; }
+    </style>
+</head>
+<body>
 
-        .photo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 15px;
-        }
-        .photo-card {
-            border: 1px solid #333;
-            padding: 5px;
-            background: #000;
-            text-align: center;
-        }
-        .photo-card img {
-            width:
+<div class="container">
+    <div class="inner-content">
+        <a href="menu.html" class="win-button"><< BACK TO MENU</a>
+
+        <h2>/ VISUAL DATABASE /</h2>
+
+        <div class="folder">
+            <div class="folder-name">[ DIR: CONCERTS ]</div>
+            <div class="grid">
+                <div class="photo">
+                    <img src="img/live_1.jpg" alt="img">
+                    <span>IMG_001.JPG</span>
+                </div>
+                 <div class="photo">
+                    <img src="img/live_2.jpg" alt="img">
+                    <span>IMG_002.JPG</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
