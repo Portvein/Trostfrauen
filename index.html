@@ -4,27 +4,45 @@
     <meta charset="UTF-8">
     <title>TROSTFRAUEN // ACCESS</title>
     <style>
+        /* ОБЩИЙ СТИЛЬ ФОНА */
         html {
             background-color: #000;
             background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
                               url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="150"><text x="0" y="30" fill="rgba(120,120,120,0.5)" font-family="monospace" font-size="12">DEATH IS NOT THE END TROSTFRAUEN VOID ECHOES</text><text x="20" y="80" fill="rgba(120,120,120,0.4)" font-family="monospace" font-size="12">STAY SILENT LISTEN TO THE STATIC RECALLING</text></svg>');
+            height: 100%;
         }
-        body { color: #bbb; font-family: "Courier New", monospace; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        body {
+            color: #bbb;
+            font-family: "Courier New", monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 { letter-spacing: 8px; color: #fff; margin-bottom: 40px; text-shadow: 0 0 5px #fff; }
+        
+        /* КНОПКА WINDOWS */
         .win-button {
-            display: inline-block; background: #c0c0c0; color: #000; padding: 10px 30px;
-            text-decoration: none; font-family: "Arial", sans-serif; font-size: 16px; font-weight: bold;
+            background: #c0c0c0; color: #000; padding: 10px 40px;
+            text-decoration: none; font-family: "Arial", sans-serif; font-weight: bold;
             border-top: 2px solid #fff; border-left: 2px solid #fff;
-            border-right: 2px solid #808080; border-bottom: 2px solid #808080;
+            border-right: 2px solid #444; border-bottom: 2px solid #444;
+            cursor: pointer;
         }
-        .win-button:active { border-top: 2px solid #808080; border-left: 2px solid #808080; border-right: 2px solid #fff; border-bottom: 2px solid #fff; }
-        .warning { text-align: center; }
-        h1 { letter-spacing: 10px; color: #fff; margin-bottom: 30px; }
+        .win-button:active {
+            border-top: 2px solid #444; border-left: 2px solid #444;
+            border-right: 2px solid #fff; border-bottom: 2px solid #fff;
+            position: relative; top: 1px;
+        }
     </style>
 </head>
 <body>
-    <div class="warning">
-        <h1>TROSTFRAUEN</h1>
-        <a href="menu.html" class="win-button">START SYSTEM</a>
-    </div>
+
+    <h1>TROSTFRAUEN</h1>
+    
+    <a href="menu.html" class="win-button">ENTER SYSTEM</a>
+
 </body>
 </html>
