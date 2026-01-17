@@ -2,82 +2,40 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>GALLERY // TROSTFRAUEN</title>
+    <title>VISUAL_ARCHIVE // TROSTFRAUEN</title>
     <style>
-        body { background-color: #000; color: #ccc; font-family: "Courier New", monospace; margin: 20px; }
-        .container { max-width: 900px; margin: 0 auto; border: 2px solid #333; padding: 15px; }
-        nav { background: #111; padding: 5px; border: 1px solid #444; margin-bottom: 20px; }
-        nav a { color: #ff0000; text-decoration: none; margin-right: 15px; }
-        
-        .folder-section { border: 1px solid #444; margin-bottom: 30px; padding: 10px; }
-        .folder-header { background: #222; padding: 5px; margin: -10px -10px 10px -10px; font-weight: bold; border-bottom: 1px solid #444; }
-        
-        /* Сетка для фото */
+        html {
+            background-color: #000;
+            background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
+                              url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="150"><text x="0" y="30" fill="rgba(120,120,120,0.5)" font-family="monospace" font-size="12">DEATH IS NOT THE END TROSTFRAUEN VOID ECHOES</text><text x="20" y="80" fill="rgba(120,120,120,0.4)" font-family="monospace" font-size="12">STAY SILENT LISTEN TO THE STATIC RECALLING</text></svg>');
+        }
+        body { color: #bbb; font-family: "Courier New", monospace; margin: 0; padding: 20px; }
+        .container { max-width: 900px; margin: 30px auto; border: 2px solid #444; background: #000; padding: 2px; }
+        .inner-border { border: 1px solid #222; padding: 20px; }
+
+        /* Кнопка Windows */
+        .win-button {
+            display: inline-block; background: #c0c0c0; color: #000; padding: 5px 15px;
+            text-decoration: none; font-family: "Arial", sans-serif; font-size: 13px;
+            border-top: 2px solid #fff; border-left: 2px solid #fff;
+            border-right: 2px solid #808080; border-bottom: 2px solid #808080;
+            margin-bottom: 20px;
+        }
+        .win-button:active { border-top: 2px solid #808080; border-left: 2px solid #808080; border-right: 2px solid #fff; border-bottom: 2px solid #fff; }
+
+        .folder-section { border: 1px inset #333; margin-bottom: 30px; padding: 15px; background: #0a0a0a; }
+        .folder-header { color: #eee; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid #444; padding-bottom: 5px; }
+
         .photo-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             gap: 15px;
         }
-        
         .photo-card {
-            border: 1px dashed #555;
-            padding: 5px;
-            text-align: center;
-            background: #0a0a0a;
-        }
-        
-        .photo-card img {
-            width: 100%;
-            height: auto;
-            filter: grayscale(50%) contrast(120%); /* Эффект старого фото */
             border: 1px solid #333;
+            padding: 5px;
+            background: #000;
+            text-align: center;
         }
-        
-        .photo-card p { font-size: 0.7em; margin-top: 5px; color: #888; }
-        
-        h2 { font-size: 1.2em; color: #eee; }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <nav>
-        [ <a href="menu.html">Главная</a> ]
-        [ <a href="media.html">Медиа</a> ]
-    </nav>
-
-    <h1>ВИЗУАЛЬНЫЙ АРХИВ</h1>
-
-    <div class="folder-section">
-        <div class="folder-header">[ ПАПКА: КОНЦЕРТЫ_2024 ]</div>
-        <div class="photo-grid">
-            
-            <div class="photo-card">
-                <img src="img/live_1.jpg" alt="Live">
-                <p>DSC_001.JPG</p>
-            </div>
-            
-            <div class="photo-card">
-                <img src="img/live_2.jpg" alt="Live">
-                <p>DSC_002.JPG</p>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="folder-section">
-        <div class="folder-header">[ ПАПКА: ЗАКУЛИСЬЕ / BACKSTAGE ]</div>
-        <div class="photo-grid">
-            
-            <div class="photo-card">
-                <img src="img/back_1.jpg" alt="Backstage">
-                <p>MEMORIES.PNG</p>
-            </div>
-
-        </div>
-    </div>
-
-</div>
-
-</body>
-</html>
+        .photo-card img {
+            width:
