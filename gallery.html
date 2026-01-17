@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>GALLERY // TROSTFRAUEN</title>
+    <style>
+        body { background-color: #000; color: #ccc; font-family: "Courier New", monospace; margin: 20px; }
+        .container { max-width: 900px; margin: 0 auto; border: 2px solid #333; padding: 15px; }
+        nav { background: #111; padding: 5px; border: 1px solid #444; margin-bottom: 20px; }
+        nav a { color: #ff0000; text-decoration: none; margin-right: 15px; }
+        
+        .folder-section { border: 1px solid #444; margin-bottom: 30px; padding: 10px; }
+        .folder-header { background: #222; padding: 5px; margin: -10px -10px 10px -10px; font-weight: bold; border-bottom: 1px solid #444; }
+        
+        /* Сетка для фото */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        
+        .photo-card {
+            border: 1px dashed #555;
+            padding: 5px;
+            text-align: center;
+            background: #0a0a0a;
+        }
+        
+        .photo-card img {
+            width: 100%;
+            height: auto;
+            filter: grayscale(50%) contrast(120%); /* Эффект старого фото */
+            border: 1px solid #333;
+        }
+        
+        .photo-card p { font-size: 0.7em; margin-top: 5px; color: #888; }
+        
+        h2 { font-size: 1.2em; color: #eee; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        [ <a href="index.html">Главная</a> ]
+        [ <a href="media.html">Медиа</a> ]
+    </nav>
+
+    <h1>ВИЗУАЛЬНЫЙ АРХИВ</h1>
+
+    <div class="folder-section">
+        <div class="folder-header">[ ПАПКА: КОНЦЕРТЫ_2024 ]</div>
+        <div class="photo-grid">
+            
+            <div class="photo-card">
+                <img src="img/live_1.jpg" alt="Live">
+                <p>DSC_001.JPG</p>
+            </div>
+            
+            <div class="photo-card">
+                <img src="img/live_2.jpg" alt="Live">
+                <p>DSC_002.JPG</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="folder-section">
+        <div class="folder-header">[ ПАПКА: ЗАКУЛИСЬЕ / BACKSTAGE ]</div>
+        <div class="photo-grid">
+            
+            <div class="photo-card">
+                <img src="img/back_1.jpg" alt="Backstage">
+                <p>MEMORIES.PNG</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
