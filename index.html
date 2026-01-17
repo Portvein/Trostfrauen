@@ -2,78 +2,129 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>TROSTFRAUEN // OFFICIAL ARCHIVE</title>
+    <title>TROSTFRAUEN // ARCHIVE</title>
     <style>
-        body {
+        /* Фоновый текстовый шум */
+        html {
             background-color: #000;
-            color: #ccc;
+            background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), 
+                              url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="100"><text x="0" y="20" fill="rgba(50,50,50,0.3)" font-family="monospace" font-size="10">DEATH IS NOT THE END TROSTFRAUEN VOID ECHOES</text><text x="10" y="50" fill="rgba(50,50,50,0.2)" font-family="monospace" font-size="10">STAY SILENT LISTEN TO THE STATIC RECALLING</text></svg>');
+        }
+
+        body {
+            color: #bbb;
             font-family: "Courier New", Courier, monospace;
-            margin: 20px;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
         }
+
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            border: 2px solid #333;
-            padding: 15px;
+            max-width: 700px;
+            margin: 50px auto;
+            background: #000;
+            border: 2px solid #444;
+            padding: 2px; /* Отступ для внутренней рамки */
         }
+
+        .inner-border {
+            border: 1px solid #222;
+            padding: 20px;
+        }
+
         header {
-            border-bottom: 2px double #555;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
             text-align: center;
+            border-bottom: 1px solid #444;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
         }
-        nav {
-            margin-bottom: 20px;
-            background: #111;
-            padding: 5px;
-            border: 1px solid #444;
+
+        h1 {
+            letter-spacing: 5px;
+            color: #eee;
+            margin-bottom: 5px;
         }
-        nav a {
-            color: #ff0000; /* Цвет ссылок как акцент */
+
+        .sub-header {
+            font-size: 0.9em;
+            color: #666;
+            text-transform: uppercase;
+        }
+
+        /* Объемная кнопка Windows 95 */
+        .win-button {
+            display: inline-block;
+            background: #c0c0c0;
+            color: #000;
+            padding: 5px 15px;
             text-decoration: none;
-            margin-right: 15px;
+            font-family: "Arial", sans-serif;
+            font-size: 13px;
+            border-top: 2px solid #fff;
+            border-left: 2px solid #fff;
+            border-right: 2px solid #808080;
+            border-bottom: 2px solid #808080;
+            margin-bottom: 20px;
         }
-        nav a:hover {
-            text-decoration: underline;
-            background: #222;
+
+        .win-button:active {
+            border-top: 2px solid #808080;
+            border-left: 2px solid #808080;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
         }
+
         .content-box {
-            border: 1px solid #444;
-            padding: 10px;
-            margin-top: 10px;
+            background: #0a0a0a;
+            border: 1px inset #333;
+            padding: 15px;
+            margin-top: 20px;
         }
+
         footer {
-            margin-top: 30px;
-            font-size: 0.8em;
+            margin-top: 40px;
+            font-size: 0.7em;
+            color: #444;
             text-align: center;
-            border-top: 1px solid #333;
+        }
+
+        /* Случайный текст по бокам (декоративный) */
+        .side-text {
+            position: fixed;
+            font-size: 10px;
+            color: #222;
+            width: 100px;
+            word-wrap: break-word;
+            z-index: -1;
         }
     </style>
 </head>
 <body>
 
+<div class="side-text" style="top: 100px; left: 20px;">SYSTEM_FAILURE RECORD_0991 NO_SIGNAL</div>
+<div class="side-text" style="bottom: 100px; right: 20px;">ENDLESS_ARCHIVE_TROSTFRAUEN_NULL</div>
+
 <div class="container">
-    <header>
-        <h1>TROSTFRAUEN</h1>
-        <p><i>-- lost & found musical archive --</i></p>
-    </header>
+    <div class="inner-border">
+        <header>
+            <h1>TROSTFRAUEN</h1>
+            <div class="sub-header">-- established for eternity --</div>
+        </header>
 
-    <nav>
-        [ <a href="index.html">Главная</a> ]
-        [ <a href="media.html">Медиа</a> ]
-        [ <a href="gallery.html">Галерея</a> ]
-        [ <a href="#">Обсуждение</a> ]
-    </nav>
+        <nav>
+            <a href="index.html" class="win-button">HOME</a>
+        </nav>
 
-    <div class="content-box">
-        <h2>О группе</h2>
-        <p>Добро пожаловать в официальный архив группы Trostfrauen.</p>
-        <p>Здесь собраны материалы, которые считались утерянными. Мы восстанавливаем записи и визуальные документы в хронологическом порядке.</p>
+        <div class="content-box">
+            <p>Добро пожаловать в официальный цифровой монумент Trostfrauen.</p>
+            <p>Этот ресурс содержит восстановленные фрагменты аудиозаписей и визуальных образов. Мы не гарантируем целостность данных.</p>
+        </div>
+
+        <footer>
+            [ ARCHIVE STATUS: OPERATIONAL ]<br>
+            &copy; 2024-2026 TROSTFRAUEN
+        </footer>
     </div>
-
-    <footer>
-        <p>&copy; 2024-2026 TROSTFRAUEN. Создано для вечности.</p>
-    </footer>
 </div>
 
 </body>
